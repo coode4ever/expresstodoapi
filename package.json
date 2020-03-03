@@ -1,0 +1,26 @@
+{
+  "name": "expresstodoapi",
+  "version": "1.0.0",
+  "description": "Todo API",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "deploy": "rsync -av -e ssh --exclude='node_modules' ./* amita@3.90.62.224:/var/www/todoapp/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose",
+    "Notes"
+  ],
+  "author": "Arjun Ghimire",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3"
+  }
+}
